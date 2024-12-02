@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian Ter Haar</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ian Ter Haar | Terminal</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ian Ter Haar</h1>
-    <p>Development starts 2 December 2024, 
-        <a href="https://github.com/IanTerHaar/ianterhaar.me" target="_blank">Click here</a> to view the GitHub Repository.
-    </p>
+  <div class="terminal">
+    <pre id="output"></pre>
+    <div class="input-line">
+      <span class="prompt">></span>
+      <input type="text" id="input" autocomplete="off">
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

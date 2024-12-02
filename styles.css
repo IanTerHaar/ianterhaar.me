@@ -1,5 +1,93 @@
-body{
+/* styles.css */
+
+body {
     margin: 0;
-    background: rgb(238, 156, 156);
-    text-align: center;
-}
+    font-family: 'Courier New', Courier, monospace;
+    background: #211d1b; /* Background color */
+    color: #519975; /* Command text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 1.2em; /* Increased font size by 20% */
+  }
+  
+  .terminal {
+    background: #211d1b; /* Background color */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .output {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-left: 10px; /* Align with the input area */
+    margin-right: 10px; /* Ensure the same alignment on both sides */
+  }
+  
+  .input-line {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+  }
+  
+  .prompt {
+    color: #519975; /* Command text color */
+    margin-right: 5px;
+  }
+  
+  /* Modify input field to reflect custom prompt */
+  #input {
+    background: transparent;
+    border: none;
+    color: #519975; /* Command text color */
+    outline: none;
+    flex-grow: 1;
+    font-size: 1.2em; /* Same font size as on screen */
+    font-family: 'Courier New', Courier, monospace; /* Same font as screen text */
+    line-height: 1.5; /* Improve line height for readability */
+  }
+  
+  #input:focus {
+    outline: none;
+  }
+  
+  /* Command text */
+  .command {
+    color: #519975; /* Command text color */
+    margin-left: 10px; /* Align with welcome message */
+  }
+  
+  /* Result text */
+  .result {
+    color: #b89076; /* Result text color */
+    margin-left: 10px; /* Align with welcome message */
+  }
+  
+  /* ASCII art color */
+  .ascii-art {
+    color: #519975; /* Keep ASCII art in greenish color */
+    font-size: 1.2em; /* Ensure ASCII art has the same size */
+    line-height: 1.5; /* Maintain consistency in line height */
+    margin-left: 10px; /* Align with the rest of the content */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+  
