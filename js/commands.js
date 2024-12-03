@@ -1,6 +1,8 @@
 var youtube = "https://www.youtube.com/@ianterhaar";
 var password = "Ian";
 var linkedin = "https://www.linkedin.com/in/iterhaar/";
+var instagram = "https://www.instagram.com/ian.th_xd/";
+var facebook = "https://www.facebook.com/ianterhaar03";
 var github = "https://github.com/IanTerHaar";
 var email = 'mailto:ian.terhaar1004@gmail.com';
 var repo = "https://github.com/IanTerHaar/ianterhaar.me"
@@ -21,9 +23,11 @@ whois = [
 
 social = [
   "<br>",
-  'youtube        <a href="' + youtube + '" target="_blank">youtube/@ianterhaar' + "</a>",
-  'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/in/iterhaar/' + "</a>",
-  'github         <a href="' + github + '" target="_blank">github/IanTerHaar' + "</a>",
+  '<a href="' + github + '" target="_blank"><span>GitHub</span></a>',
+  '<a href="' + linkedin + '" target="_blank"><span>LinkedIn</span></a>',
+  '<a href="' + instagram + '" target="_blank"><span>Instagram</span></a>',
+  '<a href="' + facebook + '" target="_blank"><span>Facebook</span></a>',
+  '<a href="' + youtube + '" target="_blank"><span>Youtube</span></a>',
   "<br>"
 ];
 
