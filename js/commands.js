@@ -47,13 +47,13 @@ projects = [
 
 work = [
   "<br>",
-  '<span>The Mom and Baby House</span>        2024 - Present',
+  '<span>The Mom and Baby House</span>        Jul 2024 - Present',
   '<span>E-commerce Photographer and SEO Copywriter</span>',
   "<br>",
-  '<span>Hero Events</span>                   2023 - Present',
+  '<span>Hero Events</span>                   Jan 2023 - Present',
   '<span>Venue Bartender</span>',
   "<br>",
-  '<span>Casa Del Sol</span>                  2022 - 2023',
+  '<span>Casa Del Sol</span>                  June 2022 - Feb 2023',
   '<span>Cocktail Bartender</span>',
   "<br>",
 ]
