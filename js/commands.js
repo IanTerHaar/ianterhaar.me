@@ -45,6 +45,29 @@ projects = [
   "<br>"
 ];
 
+work = [
+  "<br>",
+  '<span>The Mom and Baby House</span>        2024 - Present',
+  '<span>E-commerce Photographer and SEO Copywriter</span>',
+  "<br>",
+  '<span>Hero Events</span>                   2023 - Present',
+  '<span>Venue Bartender</span>',
+  "<br>",
+  '<span>Casa Del Sol</span>                  2022 - 2023',
+  '<span>Cocktail Bartender</span>',
+  "<br>",
+]
+
+edu = [
+  "<br>",
+  '<span>Eduvos Private University</span>     2022 - 2024',
+  '<span>Qualification:</span>                Bachelor of Information Systems',
+  "<br>",
+  '<span>Strand High School</span>            2017 - 2021',
+  '<span>Qualification:</span>                Matric Certificate',
+  "<br>",
+]
+
 docs = [
   "<br>",
   (() => {
@@ -65,8 +88,10 @@ help = [
   '<span class="command">whois</span>          Who is Ian?',
   '<span class="command">social</span>         Display my social networks',
   '<span class="command">email</span>          Reach me via email',
+  '<span class="command">work</span>           Places I have worked for',
   '<span class="command">projects</span>       View my coding projects',
   '<span class="command">docs</span>           View my CV and Transcript',
+  '<span class="command">edu</span>            My Education',
   '<span class="command">repo</span>           Visit the GitHub Repository',
   '<span class="command">secret</span>         Find the password',
   '<span class="command">history</span>        View command history',
