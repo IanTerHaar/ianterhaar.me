@@ -35,9 +35,24 @@ secret = [
 
 projects = [
   "<br>",
-  "<span>AccountIT</span>     A financial management application",
-  "<span>EcoGrow</span>       A Third year e-commerce website",
-  "<span>hello.</span>        An Online messaging app built using Java WebSocket Server",
+  "<a href='https://github.com/IanTerHaar/AccountIT' target='_blank'><span>AccountIT</span></a>     A financial management application",
+  "<a href='https://github.com/IanTerHaar/EcoGrow' target='_blank'><span>EcoGrow</span></a>       A Third year e-commerce website",
+  "<a href='https://github.com/IanTerHaar/hello.' target='_blank'><span>hello.</span></a>        An Online messaging app built using Java WebSocket Server",
+  "<br>"
+];
+
+docs = [
+  "<br>",
+  (() => {
+    const path = "docs/Ian Ter Haar CV.pdf";
+    const fileName = path.split('/').pop();
+    return `<a href="${path}" target="_blank">${fileName}</a>`;
+  })(),
+  (() => {
+    const path = "docs/Ian Ter Haar Academic Transcript.pdf";
+    const fileName = path.split('/').pop();
+    return `<a href="${path}" target="_blank">${fileName}</a>`;
+  })(),
   "<br>"
 ];
 
@@ -45,14 +60,16 @@ help = [
   "<br>",
   '<span class="command">whois</span>          Who is Ian?',
   '<span class="command">social</span>         Display my social networks',
-  '<span class="command">secret</span>         Find the password',
+  '<span class="command">email</span>          Reach me via email',
   '<span class="command">projects</span>       View my coding projects',
+  '<span class="command">docs</span>           View my CV and Transcript',
+  '<span class="command">repo</span>           Visit the GitHub Repository',
+  '<span class="command">secret</span>         Find the password',
   '<span class="command">history</span>        View command history',
   '<span class="command">help</span>           I am sure you know what it does',
-  '<span class="command">email</span>          Reach me via email',
   '<span class="command">clear</span>          Clear the terminal',
   '<span class="command">banner</span>         Display the header',
-  '<span class="command">repo</span>           Visit the GitHub Repository',
+  
   "<br>",
 ];
 

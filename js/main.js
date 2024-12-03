@@ -85,13 +85,6 @@ function commander(cmd) {
     case "whois":
       loopLines(whois, "color2 margin", 80);
       break;
-    case "whoami":
-      loopLines(whoami, "color2 margin", 80);
-      break;
-    case "video":
-      addLine("Opening YouTube...", "color2", 80);
-      newTab(youtube);
-      break;
     case "sudo":
       addLine("Hold on, you are not the admin...", "color2", 80);
       setTimeout(function() {
@@ -120,6 +113,9 @@ function commander(cmd) {
       addLine('Opening mailto:<a href="mailto:ian.terhaar1004@gmail.com">ian.terhaar1004@gmail.com</a>...', "color2", 80);
       newTab(email);
       break;
+    case "docs":
+      loopLines(docs, "color2 margin", 80);
+      break;
     case "clear":
       setTimeout(function() {
         terminal.innerHTML = '<a id="before"></a>';
@@ -134,17 +130,9 @@ function commander(cmd) {
       addLine("Opening YouTube...", "color2", 80);
       newTab(youtube);
       break;
-    case "twitter":
-      addLine("Opening Twitter...", "color2", 0);
-      newTab(twitter);
-      break;
     case "linkedin":
       addLine("Opening LinkedIn...", "color2", 0);
       newTab(linkedin);
-      break;
-    case "instagram":
-      addLine("Opening Instagram...", "color2", 0);
-      newTab(instagram);
       break;
     case "github":
       addLine("Opening GitHub...", "color2", 0);
