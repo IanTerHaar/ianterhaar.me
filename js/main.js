@@ -98,6 +98,12 @@ function commander(cmd) {
       liner.classList.add("password");
       pw = true;
       break;
+    case "work":
+      loopLines(work, "color2 margin", 80);
+      break;
+    case "edu":
+        loopLines(edu, "color2 margin", 80);
+        break;
     case "projects":
       loopLines(projects, "color2 margin", 80);
       break;
