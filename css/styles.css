@@ -1,31 +1,37 @@
+/* General Styling */
 body {
   margin: 0;
-  padding: 15px 20px;
-  min-height: 99%;
+  padding: 15px 10px;
+  min-height: 100%;
   width: 100%;
-  min-width: 550px;
+  min-width: 320px;
   color: #519975;
   background: #211D1B;
   font-family: cursor, monospace;
   overflow-x: hidden;
 }
+
 ::selection {
   color: #211830;
   background-color: #519975;
 }
+
 ::-moz-selection {
   color: #211830;
   background-color: #519975;
 }
+
 textarea {
   left: -1000px;
   position: absolute;
 }
+
 b {
   font-weight: bold;
   text-decoration: underline;
 }
-/* Cursor Start */
+
+/* Cursor Styling */
 .cursor {
   font-size: 12px;
   color: #73ABAD;
@@ -42,16 +48,19 @@ b {
   text-decoration: blink;
   animation: blinker 1s linear infinite;
 }
+
 @keyframes blinker {
   50% {
     opacity: 0;
   }
 }
+
 #command {
   cursor: text;
   height: 50px;
   color: #73ABAD;
 }
+
 #liner {
   line-height: 1.3em;
   margin-top: -2px;
@@ -59,13 +68,16 @@ b {
   animation-delay: 1.2s;
   opacity: 0;
 }
+
 #liner::before {
   color: #519975;
   content: "visitor@ianterhaar.me:~$";
 }
+
 #liner.password::before {
   content: "Password:";
 }
+
 @keyframes show {
   from {
     opacity: 0;
@@ -74,7 +86,7 @@ b {
     opacity: 1;
   }
 }
-/* Cursor End */
+
 p {
   display: block;
   line-height: 1.3em;
@@ -85,12 +97,15 @@ p {
   letter-spacing: 0.05em;
   animation: typing 0.5s steps(30, end);
 }
+
 .no-animation {
   animation: typing 0 steps(30, end);
 }
+
 .margin {
   margin-left: 20px;
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -99,33 +114,95 @@ p {
     width: 100%;
   }
 }
+
 .index {
   color: #DCDCCC;
 }
+
 .color2 {
   color: #B89076;
 }
+
 .command {
   color: #73ABAD;
   text-shadow: 0 0 5px #73ABAD; 
 }
+
 .error {
   color: #B89076;
 }
+
 .white {
   color: #fff;
 }
+
 .inherit,
 a {
   color: #9C8394;
 }
+
 a {
   text-decoration: inherit;
 }
+
 a:hover {
   background: #73ABAD;
   color: #211830;
 }
+
 a:focus {
   outline: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 0.9em;
+    white-space: normal;
+  }
+
+  #command {
+    font-size: 0.9em;
+  }
+
+  .cursor {
+    height: 1.2em;
+    width: 8px;
+  }
+
+  .margin {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px 5px 10px 5px; /* Added extra padding to the right for mobile */
+  }
+
+  #liner::before {
+    content: "visitor:~$"; /* Shorten the prompt for mobile */
+  }
+
+  p {
+    font-size: 0.8em;
+    white-space: normal;
+  }
+
+  #command {
+    font-size: 0.8em;
+  }
+
+  .cursor {
+    height: 1em;
+    width: 6px;
+  }
+
+  .margin {
+    margin-left: 5px;
+  }
 }
