@@ -47,7 +47,10 @@ projects = [
 
 work = [
   "<br>",
-  '<span>The Mom and Baby House</span>        Jul 2024 - Present',
+  '<span>Pepkor Payments and Lending</span>   Jan 2025 - Present',
+  '<span>Software Engineer</span>',
+  "<br>",
+  '<span>The Mom and Baby House</span>        Jul 2024 - Dec 2024',
   '<span>E-commerce Photographer and SEO Copywriter</span>',
   "<br>",
   '<span>Hero Events</span>                   Jan 2023 - Present',
@@ -61,7 +64,7 @@ work = [
 edu = [
   "<br>",
   '<span>Eduvos Private University</span>     2022 - 2024',
-  '<span>Qualification:</span>                Bachelor of Information Systems',
+  '<span>Qualification:</span>                Bachelor of Information Technology',
   "<br>",
   '<span>Strand High School</span>            2017 - 2021',
   '<span>Qualification:</span>                Matric Certificate',
