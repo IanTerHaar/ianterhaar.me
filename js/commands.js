@@ -79,7 +79,7 @@ docs = [
     return `<a href="${path}" target="_blank">${fileName}</a>`;
   })(),
   (() => {
-    const path = "docs/Ian Ter Haar Academic Transcript.pdf";
+    const path = "docs/Ian Ter Haar Transcript.pdf";
     const fileName = path.split('/').pop();
     return `<a href="${path}" target="_blank">${fileName}</a>`;
   })(),
