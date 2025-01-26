@@ -12,9 +12,25 @@ Welcome to the repository for my **Terminal-Style Portfolio Website**! This inte
 - **repo**: Navigate to this GitHub repository.
 - **secret**: Discover a hidden password (if you can!).
 - **history**: Review previously entered commands.
+- **theme**: Change the terminal's color scheme.
 - **help**: Display all available commands.
 - **clear**: Clear the terminal screen.
 - **banner**: Display the header banner.
+
+## Themes
+
+The terminal supports multiple color schemes inspired by popular development environments and retro computers:
+
+- **default**: The classic dark terminal theme
+- **light**: A light, modern theme
+- **hacker**: Classic matrix-style theme
+- **sunset**: A warm, purple-orange theme
+- **powershell**: Windows PowerShell blue theme
+- **vscode**: Visual Studio Code dark theme
+- **ubuntu**: Ubuntu Terminal theme
+- **commodore**: Commodore 64 retro theme
+
+To change themes, use the command: `theme [name]` (e.g., `theme vscode`)
 
 ## Acknowledgments
 
@@ -25,6 +41,7 @@ This project was heavily inspired by [Forrest Knight's Terminal-Style Portfolio]
 - **HTML/CSS**: For the structure and styling.
 - **JavaScript**: Handles the interactive terminal experience.
 - **Custom Design**: Inspired by classic terminal aesthetics.
+- **CSS Variables**: For dynamic theme switching.
 
 ## Hosting
 

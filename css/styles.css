@@ -1,3 +1,113 @@
+/* Theme Variables */
+:root {
+  --background: #211D1B;
+  --text-color: #519975;
+  --cursor-color: #73ABAD;
+  --command-color: #73ABAD;
+  --error-color: #B89076;
+  --link-color: #9C8394;
+  --index-color: #DCDCCC;
+  --selection-bg: #519975;
+  --selection-text: #211830;
+}
+
+/* Themes */
+.theme-default {
+  --background: #211D1B;
+  --text-color: #519975;
+  --cursor-color: #73ABAD;
+  --command-color: #73ABAD;
+  --error-color: #B89076;
+  --link-color: #9C8394;
+  --index-color: #DCDCCC;
+  --selection-bg: #519975;
+  --selection-text: #211830;
+}
+
+.theme-light {
+  --background: #f0f0f0;
+  --text-color: #2E8B57;
+  --cursor-color: #4A90E2;
+  --command-color: #4A90E2;
+  --error-color: #D64933;
+  --link-color: #6B4E71;
+  --index-color: #333333;
+  --selection-bg: #2E8B57;
+  --selection-text: #ffffff;
+}
+
+.theme-hacker {
+  --background: #0D0208;
+  --text-color: #00FF41;
+  --cursor-color: #00FF41;
+  --command-color: #00FF41;
+  --error-color: #FF0000;
+  --link-color: #008F11;
+  --index-color: #00FF41;
+  --selection-bg: #00FF41;
+  --selection-text: #0D0208;
+}
+
+.theme-sunset {
+  --background: #2D1B2E;
+  --text-color: #FFB86C;
+  --cursor-color: #FF79C6;
+  --command-color: #FF79C6;
+  --error-color: #FF5555;
+  --link-color: #BD93F9;
+  --index-color: #F8F8F2;
+  --selection-bg: #FFB86C;
+  --selection-text: #2D1B2E;
+}
+
+.theme-powershell {
+  --background: #012456;
+  --text-color: #FFFFFF;
+  --cursor-color: #FFFFFF;
+  --command-color: #F5F5F5;
+  --error-color: #FF0000;
+  --link-color: #7FD5EA;
+  --index-color: #FFFF00;
+  --selection-bg: #FFFFFF;
+  --selection-text: #012456;
+}
+
+.theme-vscode {
+  --background: #1E1E1E;
+  --text-color: #9CDCFE;
+  --cursor-color: #569CD6;
+  --command-color: #569CD6;
+  --error-color: #F44747;
+  --link-color: #4EC9B0;
+  --index-color: #CE9178;
+  --selection-bg: #264F78;
+  --selection-text: #FFFFFF;
+}
+
+.theme-ubuntu {
+  --background: #2C001E;
+  --text-color: #FFFFFF;
+  --cursor-color: #E95420;
+  --command-color: #E95420;
+  --error-color: #FF4444;
+  --link-color: #AEA79F;
+  --index-color: #77216F;
+  --selection-bg: #E95420;
+  --selection-text: #FFFFFF;
+}
+
+.theme-commodore {
+  --background: #4040E0;
+  --text-color: #A0A0FF;
+  --cursor-color: #A0A0FF;
+  --command-color: #A0A0FF;
+  --error-color: #FF0000;
+  --link-color: #FFA0A0;
+  --index-color: #FFFFFF;
+  --selection-bg: #A0A0FF;
+  --selection-text: #4040E0;
+}
+
 /* General Styling */
 body {
   margin: 0;
@@ -5,20 +115,20 @@ body {
   min-height: 100%;
   width: 100%;
   min-width: 320px;
-  color: #519975;
-  background: #211D1B;
+  color: var(--text-color);
+  background: var(--background);
   font-family: cursor, monospace;
   overflow-x: hidden;
 }
 
 ::selection {
-  color: #211830;
-  background-color: #519975;
+  color: var(--selection-text);
+  background-color: var(--selection-bg);
 }
 
 ::-moz-selection {
-  color: #211830;
-  background-color: #519975;
+  color: var(--selection-text);
+  background-color: var(--selection-bg);
 }
 
 textarea {
@@ -34,8 +144,8 @@ b {
 /* Cursor Styling */
 .cursor {
   font-size: 12px;
-  color: #73ABAD;
-  background-color: #73ABAD;
+  color: var(--cursor-color);
+  background-color: var(--cursor-color);
   position: relative;
   opacity: 1;
   height: 1.5em;
@@ -58,7 +168,7 @@ b {
 #command {
   cursor: text;
   height: 50px;
-  color: #73ABAD;
+  color: var(--command-color);
 }
 
 #liner {
@@ -70,7 +180,7 @@ b {
 }
 
 #liner::before {
-  color: #519975;
+  color: var(--text-color);
   content: "visitor@ianterhaar.me:~$";
 }
 
@@ -116,7 +226,7 @@ p {
 }
 
 .index {
-  color: #DCDCCC;
+  color: var(--index-color);
 }
 
 .color2 {
@@ -124,12 +234,12 @@ p {
 }
 
 .command {
-  color: #73ABAD;
-  text-shadow: 0 0 5px #73ABAD; 
+  color: var(--command-color);
+  text-shadow: 0 0 5px var(--command-color);
 }
 
 .error {
-  color: #B89076;
+  color: var(--error-color);
 }
 
 .white {
@@ -138,7 +248,7 @@ p {
 
 .inherit,
 a {
-  color: #9C8394;
+  color: var(--link-color);
 }
 
 a {
@@ -146,8 +256,8 @@ a {
 }
 
 a:hover {
-  background: #73ABAD;
-  color: #211830;
+  background: var(--cursor-color);
+  color: var(--background);
 }
 
 a:focus {
