@@ -217,7 +217,9 @@ function switchTheme(themeName) {
     'theme-powershell',
     'theme-vscode',
     'theme-ubuntu',
-    'theme-commodore'
+    'theme-commodore',
+    'theme-monokai',
+    'theme-cyberpunk'
   );
   
   // Add the new theme class
