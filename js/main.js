@@ -209,7 +209,16 @@ function loopLines(name, style, time) {
 // Add theme switching function after the existing functions
 function switchTheme(themeName) {
   // Remove all existing theme classes
-  document.body.classList.remove('theme-default', 'theme-light', 'theme-hacker', 'theme-sunset');
+  document.body.classList.remove(
+    'theme-default', 
+    'theme-light', 
+    'theme-hacker', 
+    'theme-sunset',
+    'theme-powershell',
+    'theme-vscode',
+    'theme-ubuntu',
+    'theme-commodore'
+  );
   
   // Add the new theme class
   document.body.classList.add('theme-' + themeName);
