@@ -108,6 +108,32 @@
   --selection-text: #4040E0;
 }
 
+.theme-monokai {
+  --background: #272822;
+  --text-color: #F8F8F2;
+  --cursor-color: #A6E22E;
+  --command-color: #66D9EF;
+  --error-color: #F92672;
+  --link-color: #AE81FF;
+  --index-color: #FD971F;
+  --selection-bg: #49483E;
+  --selection-text: #F8F8F2;
+  --color2: #E6DB74;
+}
+
+.theme-cyberpunk {
+  --background: #0f0b1e;
+  --text-color: #ff00ff;
+  --cursor-color: #00ffff;
+  --command-color: #f700ff;
+  --error-color: #ff0055;
+  --link-color: #00ffff;
+  --index-color: #ff00ff;
+  --selection-bg: #ff00ff;
+  --selection-text: #0f0b1e;
+  --color2: #00ffff;
+}
+
 /* General Styling */
 body {
   margin: 0;

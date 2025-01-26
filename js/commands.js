@@ -9,7 +9,7 @@ var repo = "https://github.com/IanTerHaar/ianterhaar.me"
 
 // Add theme-related variables at the top with other variables
 var currentTheme = "default";
-var themes = ["default", "light", "hacker", "sunset", "powershell", "vscode", "ubuntu", "commodore"];
+var themes = ["default", "light", "hacker", "sunset", "powershell", "vscode", "ubuntu", "commodore", "monokai", "cyberpunk"];
 
 whois = [
   "<br>",
@@ -102,6 +102,8 @@ themes_help = [
   "- vscode    : Visual Studio Code dark theme",
   "- ubuntu    : Ubuntu Terminal theme",
   "- commodore : Commodore 64 retro theme",
+  "- monokai   : Monokai color scheme theme",
+  "- cyberpunk : Neon purple Cyberpunk 2077 theme",
   "<br>",
   "Usage: theme [name]",
   "Example: theme hacker",

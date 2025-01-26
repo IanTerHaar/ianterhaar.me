@@ -7,8 +7,10 @@ Welcome to the repository for my **Terminal-Style Portfolio Website**! This inte
 - **whois**: Learn about Ian Ter Haar.
 - **social**: Display links to my social networks.
 - **email**: Find out how to contact me via email.
+- **work**: Places I have worked for.
 - **projects**: Explore my coding projects.
 - **docs**: View my CV and academic transcript.
+- **edu**: My Education.
 - **repo**: Navigate to this GitHub repository.
 - **secret**: Discover a hidden password (if you can!).
 - **history**: Review previously entered commands.
@@ -29,6 +31,8 @@ The terminal supports multiple color schemes inspired by popular development env
 - **vscode**: Visual Studio Code dark theme
 - **ubuntu**: Ubuntu Terminal theme
 - **commodore**: Commodore 64 retro theme
+- **monokai**: Monokai color scheme theme
+- **cyberpunk**: Neon purple Cyberpunk 2077 theme
 
 To change themes, use the command: `theme [name]` (e.g., `theme vscode`)
 
