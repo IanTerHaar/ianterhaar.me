@@ -7,17 +7,21 @@ var github = "https://github.com/IanTerHaar";
 var email = 'mailto:ian.terhaar1004@gmail.com';
 var repo = "https://github.com/IanTerHaar/ianterhaar.me"
 
+// Add theme-related variables at the top with other variables
+var currentTheme = "default";
+var themes = ["default", "light", "hacker", "sunset", "powershell", "vscode", "ubuntu", "commodore"];
+
 whois = [
   "<br>",
-  "Hi, I’m Ian Ter Haar, a recent graduate from Eduvos University with a Bachelor’s degree in Information Technology.",
-  "I’m an aspiring software engineer with a passion for crafting innovative solutions and building efficient, user-friendly applications.",
+  "Hi, I'm Ian Ter Haar, a recent graduate from Eduvos University with a Bachelor's degree in Information Technology.",
+  "I'm an aspiring software engineer with a passion for crafting innovative solutions and building efficient, user-friendly applications.",
   "during my studies, I had the privilege of leading a team project called AccountIT,", "a financial management application designed to help users track budgets and savings goals.",
   "as the group leader, I managed version control through GitHub and took charge of developing the database backend using SQLite.",
   "this experience not only honed my technical skills but also strengthened my ability to collaborate and lead a team effectively.",
-  "I’m deeply enthusiastic about learning and growing as a developer.",
-  "whether it’s tackling complex coding challenges or exploring new technologies, I thrive on opportunities", "that push me to think critically and creatively.",
-  "I’m currently seeking a role where I can contribute to meaningful projects, continue refining my coding abilities,", "and make a positive impact through technology.",
-  "let’s create something awesome together!",
+  "I'm deeply enthusiastic about learning and growing as a developer.",
+  "whether it's tackling complex coding challenges or exploring new technologies, I thrive on opportunities", "that push me to think critically and creatively.",
+  "I'm currently seeking a role where I can contribute to meaningful projects, continue refining my coding abilities,", "and make a positive impact through technology.",
+  "let's create something awesome together!",
   "<br>"
 ];
 
@@ -86,6 +90,25 @@ docs = [
   "<br>"
 ];
 
+// Add theme command output
+themes_help = [
+  "<br>",
+  "Available themes:",
+  "- default   : The classic dark terminal theme",
+  "- light     : A light, modern theme",
+  "- hacker    : Classic matrix-style theme",
+  "- sunset    : A warm, purple-orange theme",
+  "- powershell: Windows PowerShell blue theme",
+  "- vscode    : Visual Studio Code dark theme",
+  "- ubuntu    : Ubuntu Terminal theme",
+  "- commodore : Commodore 64 retro theme",
+  "<br>",
+  "Usage: theme [name]",
+  "Example: theme hacker",
+  "<br>"
+];
+
+// Update help array to include theme command
 help = [
   "<br>",
   '<span class="command">whois</span>          Who is Ian?',
@@ -98,10 +121,10 @@ help = [
   '<span class="command">repo</span>           Visit the GitHub Repository',
   '<span class="command">secret</span>         Find the password',
   '<span class="command">history</span>        View command history',
+  '<span class="command">theme</span>          Change the color scheme',
   '<span class="command">help</span>           I am sure you know what it does',
   '<span class="command">clear</span>          Clear the terminal',
   '<span class="command">banner</span>         Display the header',
-  
   "<br>",
 ];
 

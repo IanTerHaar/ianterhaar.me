@@ -12,6 +12,10 @@ var commands = [];
 setTimeout(function() {
   loopLines(banner, "", 80);
   textarea.focus();
+  
+  // Load saved theme preference
+  const savedTheme = localStorage.getItem('theme') || 'default';
+  switchTheme(savedTheme);
 }, 100);
 
 window.addEventListener("keyup", enterKey);
@@ -78,7 +82,12 @@ function enterKey(e) {
 }
 
 function commander(cmd) {
-  switch (cmd.toLowerCase()) {
+  // Split command into parts
+  const parts = cmd.toLowerCase().split(' ');
+  const mainCommand = parts[0];
+  const arg = parts[1];
+
+  switch (mainCommand) {
     case "help":
       loopLines(help, "color2 margin", 80);
       break;
@@ -148,6 +157,16 @@ function commander(cmd) {
       addLine("Opening GitHub Repository...", "color2", 0);
       newTab(repo);
       break;
+    case "theme":
+      if (!arg) {
+        loopLines(themes_help, "color2 margin", 80);
+      } else if (themes.includes(arg)) {
+        switchTheme(arg);
+        addLine(`Theme switched to ${arg}`, "color2", 80);
+      } else {
+        addLine(`Theme '${arg}' not found. Type 'theme' to see available themes.`, "error", 80);
+      }
+      break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
       break;
@@ -185,4 +204,17 @@ function loopLines(name, style, time) {
   name.forEach(function(item, index) {
     addLine(item, style, index * time);
   });
+}
+
+// Add theme switching function after the existing functions
+function switchTheme(themeName) {
+  // Remove all existing theme classes
+  document.body.classList.remove('theme-default', 'theme-light', 'theme-hacker', 'theme-sunset');
+  
+  // Add the new theme class
+  document.body.classList.add('theme-' + themeName);
+  
+  // Save the theme preference to localStorage
+  localStorage.setItem('theme', themeName);
+  currentTheme = themeName;
 }
