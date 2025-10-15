@@ -1,27 +1,27 @@
-var youtube = "https://www.youtube.com/@ianterhaar";
+// var youtube = "https://www.youtube.com/@ian***";
 var password = "Ian";
 var linkedin = "https://www.linkedin.com/in/iterhaar/";
-var instagram = "https://www.instagram.com/ian.th_xd/";
-var facebook = "https://www.facebook.com/ianterhaar03";
+// var instagram = "https://www.instagram.com/ian***/";
+// var facebook = "https://www.facebook.com/ian***";
 var github = "https://github.com/IanTerHaar";
-var email = 'mailto:ian.terhaar1004@gmail.com';
+// var email = 'mailto:ian***';
 var repo = "https://github.com/IanTerHaar/ianterhaar.me"
 
-// Add theme-related variables at the top with other variables
 var currentTheme = "default";
 var themes = ["default", "light", "hacker", "sunset", "powershell", "vscode", "ubuntu", "commodore", "monokai", "cyberpunk"];
 
 whois = [
   "<br>",
-  "Hi, I'm Ian Ter Haar, a recent graduate from Eduvos University with a Bachelor's degree in Information Technology.",
-  "I'm an aspiring software engineer with a passion for crafting innovative solutions and building efficient, user-friendly applications.",
-  "during my studies, I had the privilege of leading a team project called AccountIT,", "a financial management application designed to help users track budgets and savings goals.",
-  "as the group leader, I managed version control through GitHub and took charge of developing the database backend using SQLite.",
-  "this experience not only honed my technical skills but also strengthened my ability to collaborate and lead a team effectively.",
-  "I'm deeply enthusiastic about learning and growing as a developer.",
-  "whether it's tackling complex coding challenges or exploring new technologies, I thrive on opportunities", "that push me to think critically and creatively.",
-  "I'm currently seeking a role where I can contribute to meaningful projects, continue refining my coding abilities,", "and make a positive impact through technology.",
-  "let's create something awesome together!",
+  "Hi, I'm Ian Ter Haar, I code",
+  // "a recent graduate from Eduvos University with a Bachelor's degree in Information Technology.",
+  // "I'm an aspiring software engineer with a passion for crafting innovative solutions and building efficient, user-friendly applications.",
+  // "during my studies, I had the privilege of leading a team project called AccountIT,", "a financial management application designed to help users track budgets and savings goals.",
+  // "as the group leader, I managed version control through GitHub and took charge of developing the database backend using SQLite.",
+  // "this experience not only honed my technical skills but also strengthened my ability to collaborate and lead a team effectively.",
+  // "I'm deeply enthusiastic about learning and growing as a developer.",
+  // "whether it's tackling complex coding challenges or exploring new technologies, I thrive on opportunities", "that push me to think critically and creatively.",
+  // "I'm currently seeking a role where I can contribute to meaningful projects, continue refining my coding abilities,", "and make a positive impact through technology.",
+  // "let's create something awesome together!",
   "<br>"
 ];
 
@@ -29,9 +29,9 @@ social = [
   "<br>",
   '<a href="' + github + '" target="_blank"><span>GitHub</span></a>',
   '<a href="' + linkedin + '" target="_blank"><span>LinkedIn</span></a>',
-  '<a href="' + instagram + '" target="_blank"><span>Instagram</span></a>',
-  '<a href="' + facebook + '" target="_blank"><span>Facebook</span></a>',
-  '<a href="' + youtube + '" target="_blank"><span>Youtube</span></a>',
+  // '<a href="' + instagram + '" target="_blank"><span>Instagram</span></a>',
+  // '<a href="' + facebook + '" target="_blank"><span>Facebook</span></a>',
+  // '<a href="' + youtube + '" target="_blank"><span>Youtube</span></a>',
   "<br>"
 ];
 
@@ -75,20 +75,20 @@ edu = [
   "<br>",
 ]
 
-docs = [
-  "<br>",
-  (() => {
-    const path = "docs/Ian Ter Haar CV.pdf";
-    const fileName = path.split('/').pop();
-    return `<a href="${path}" target="_blank">${fileName}</a>`;
-  })(),
-  (() => {
-    const path = "docs/Ian Ter Haar Transcript.pdf";
-    const fileName = path.split('/').pop();
-    return `<a href="${path}" target="_blank">${fileName}</a>`;
-  })(),
-  "<br>"
-];
+// docs = [
+//   "<br>",
+//   (() => {
+//     const path = "docs/Ian Ter Haar CV.pdf";
+//     const fileName = path.split('/').pop();
+//     return `<a href="${path}" target="_blank">${fileName}</a>`;
+//   })(),
+//   (() => {
+//     const path = "docs/Ian Ter Haar Transcript.pdf";
+//     const fileName = path.split('/').pop();
+//     return `<a href="${path}" target="_blank">${fileName}</a>`;
+//   })(),
+//   "<br>"
+// ];
 
 // Add theme command output
 themes_help = [
@@ -115,10 +115,10 @@ help = [
   "<br>",
   '<span class="command">whois</span>          Who is Ian?',
   '<span class="command">social</span>         Display my social networks',
-  '<span class="command">email</span>          Reach me via email',
+  // '<span class="command">email</span>          Reach me via email',
   '<span class="command">work</span>           Places I have worked for',
   '<span class="command">projects</span>       View my coding projects',
-  '<span class="command">docs</span>           View my CV and Transcript',
+  // '<span class="command">docs</span>           View my CV and Transcript',
   '<span class="command">edu</span>            My Education',
   '<span class="command">repo</span>           Visit the GitHub Repository',
   '<span class="command">secret</span>         Find the password',

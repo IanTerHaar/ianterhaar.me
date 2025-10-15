@@ -124,13 +124,13 @@ function commander(cmd) {
       loopLines(commands, "color2", 80);
       addLine("<br>", "command", 80 * commands.length + 50);
       break;
-    case "email":
-      addLine('Opening mailto:<a href="mailto:ian.terhaar1004@gmail.com">ian.terhaar1004@gmail.com</a>...', "color2", 80);
-      newTab(email);
-      break;
-    case "docs":
-      loopLines(docs, "color2 margin", 80);
-      break;
+    // case "email":
+    //   addLine('Opening mailto:<a href="mailto:ian***com">ian***com</a>...', "color2", 80);
+    //   newTab(email);
+    //   break;
+    // case "docs":
+    //   loopLines(docs, "color2 margin", 80);
+    //   break;
     case "clear":
       setTimeout(function() {
         terminal.innerHTML = '<a id="before"></a>';
@@ -141,9 +141,9 @@ function commander(cmd) {
       loopLines(banner, "", 80);
       break;
     // socials
-    case "youtube":
-      addLine("Opening YouTube...", "color2", 80);
-      newTab(youtube);
+    // case "youtube":
+    //   addLine("Opening YouTube...", "color2", 80);
+    //   newTab(youtube);
       break;
     case "linkedin":
       addLine("Opening LinkedIn...", "color2", 0);
